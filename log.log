@@ -1,0 +1,15 @@
+INFO:root:Wed Sep 20 00:30:53 2017: log started
+INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/first_names_male.txt
+INFO:root:Wed Sep 20 00:30:53 2017: type-names
+INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/first_names_female.txt
+INFO:root:Wed Sep 20 00:30:53 2017: type-names
+INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/family_names.txt
+INFO:root:Wed Sep 20 00:30:53 2017: type-names
+INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/place_names.txt
+INFO:root:Wed Sep 20 00:30:53 2017: Savage Meadow
+INFO:root:Wed Sep 20 00:30:53 2017: Initiating Urwid
+INFO:root:Wed Sep 20 00:30:53 2017: Intiating Logic Process
+INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']
+INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']
+INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']
+INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']

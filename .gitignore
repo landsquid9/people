@@ -1,2 +1,5 @@
 #compiled python
 *.pyc
+
+#git
+.git
