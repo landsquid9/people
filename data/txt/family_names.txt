@@ -1,4 +1,3 @@
-type-names
 SMITH          1.006  1.006      1
 JOHNSON        0.810  1.816      2
 WILLIAMS       0.699  2.515      3

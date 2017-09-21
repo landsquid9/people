@@ -1,4 +1,3 @@
-type-names
 MARY           2.629  2.629      1
 PATRICIA       1.073  3.702      2
 LINDA          1.035  4.736      3

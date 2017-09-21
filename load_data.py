@@ -1,6 +1,7 @@
 import custom_logging as logging
 
 from time import sleep
+import json
 
 def loadFile(fileName, stringVar):
     logging.add("Opening " + fileName)
@@ -12,7 +13,7 @@ def loadFile(fileName, stringVar):
     i += 1
     while i < len(fList):
         line = fList[i].strip()
-        if line != "": 
+        if line != "":
             if tp == "type-names":
                 lineList = line.split(" ")
                 line = lineList[0]
@@ -20,3 +21,11 @@ def loadFile(fileName, stringVar):
                 line.capitalize()
             stringVar.append(line)
         i+=1
+
+def loadJSON(fileName, stringVar):
+    logging.add("Opening JSON " + fileName)
+    f = open(fileName)
+    obj = json.loads(f.read())
+    for st in obj['list']:
+        st = st.strip()
+        stringVar.append(st)

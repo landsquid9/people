@@ -10,13 +10,14 @@ import location
 
 class LogicProcess(multiprocessing.Process):
 
-    def __init__(self,pipe, namesM, namesF, namesL, namesLoc):
+    def __init__(self,pipe, namesM, namesF, namesL, namesLoc, idleActions):
         multiprocessing.Process.__init__(self)
         self.pipeWrite = pipe
         self.namesM = namesM
         self.namesF = namesF
         self.namesL = namesL
         self.namesLoc = namesLoc
+        self.idleActions = idleActions
 
         logging.add("Intiating Logic Process")
 
@@ -41,13 +42,16 @@ class LogicProcess(multiprocessing.Process):
             ranG = random.randint(0, 2)
             if ranG == 0:
                 ranGender = "male"
-                ranName = namesM[random.randint(0, len(namesM)-1)] + " " + namesL[random.randint(0, len(namesL)-1)]
+                ranName = namesM[random.randint(0,
+                len(namesM)-1)] + " " + namesL[random.randint(0, len(namesL)-1)]
             else:
                 ranGender = "female"
-                ranName = namesF[random.randint(0, len(namesF)-1)] + " " + namesL[random.randint(0, len(namesL)-1)]
+                ranName = namesF[random.randint(0,
+                len(namesF)-1)] + " " + namesL[random.randint(0, len(namesL)-1)]
 
             self.pipeWrite.send("Creating " + ranName)
-            self.people.append(person.Person(ranName, ranGender, self.locations))
+            self.people.append(person.Person(ranName, ranGender, self.locations,
+            self.idleActions))
 
         for p in self.people:
             p.setOthers(self.people)

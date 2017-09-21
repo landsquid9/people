@@ -1,4 +1,3 @@
-type-names
 JAMES          3.318  3.318      1
 JOHN           3.271  6.589      2
 ROBERT         3.143  9.732      3

@@ -24,26 +24,31 @@ firstNamesF = []
 familyNames = []
 # Town names
 placeNames = []
+# Idle Actions
+idleActions = []
 #folders
 dataFolder = "/data/"
+jsonFolder = dataFolder + "json/";
 
 
 # load data
-ld.loadFile(projectFolder + dataFolder + "first_names_male.txt",
+ld.loadJSON(projectFolder + jsonFolder + "first_names_male.json",
                    firstNamesM)
-ld.loadFile(projectFolder + dataFolder + "first_names_female.txt",
+ld.loadJSON(projectFolder + jsonFolder + "first_names_female.json",
                    firstNamesF)
-ld.loadFile(projectFolder + dataFolder + "family_names.txt",
+ld.loadJSON(projectFolder + jsonFolder + "family_names.json",
                    familyNames)
-ld.loadFile(projectFolder + dataFolder + "place_names.txt",
+ld.loadJSON(projectFolder + jsonFolder + "place_names.json",
                    placeNames)
+ld.loadJSON(projectFolder + jsonFolder + "idle_actions.json",
+                    idleActions)
 
 (c1, c2) = multiprocessing.Pipe()
 
 log = layout.Log(c2)
 
 logicProcess = logic_process.LogicProcess(c1, firstNamesF, firstNamesM,
-                                            familyNames, placeNames)
+                                            familyNames, placeNames, idleActions)
 
 logicProcess.start()
 log.start()

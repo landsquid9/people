@@ -1,15 +1,40 @@
-INFO:root:Wed Sep 20 00:30:53 2017: log started
-INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/first_names_male.txt
-INFO:root:Wed Sep 20 00:30:53 2017: type-names
-INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/first_names_female.txt
-INFO:root:Wed Sep 20 00:30:53 2017: type-names
-INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/family_names.txt
-INFO:root:Wed Sep 20 00:30:53 2017: type-names
-INFO:root:Wed Sep 20 00:30:53 2017: Opening /home/daniel/python_projects/sim/data/place_names.txt
-INFO:root:Wed Sep 20 00:30:53 2017: Savage Meadow
-INFO:root:Wed Sep 20 00:30:53 2017: Initiating Urwid
-INFO:root:Wed Sep 20 00:30:53 2017: Intiating Logic Process
-INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']
-INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']
-INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']
-INFO:root:Wed Sep 20 00:30:53 2017: ['Honest Plateau', 'Arid Corner']
+INFO:root:Thu Sep 21 22:22:02 2017: log started
+INFO:root:Thu Sep 21 22:22:02 2017: Opening JSON /home/daniel/python_projects/sim/data/json/first_names_male.json
+INFO:root:Thu Sep 21 22:22:02 2017: Opening JSON /home/daniel/python_projects/sim/data/json/first_names_female.json
+INFO:root:Thu Sep 21 22:22:02 2017: Opening JSON /home/daniel/python_projects/sim/data/json/family_names.json
+INFO:root:Thu Sep 21 22:22:02 2017: Opening JSON /home/daniel/python_projects/sim/data/json/place_names.json
+INFO:root:Thu Sep 21 22:22:02 2017: Opening JSON /home/daniel/python_projects/sim/data/json/idle_actions.json
+INFO:root:Thu Sep 21 22:22:02 2017: Initiating Urwid
+INFO:root:Thu Sep 21 22:22:02 2017: Intiating Logic Process
+INFO:root:Thu Sep 21 22:22:02 2017: [u'Savage Meadow', u'Honest Plateau', u'Arid Corner']
+INFO:root:Thu Sep 21 22:22:02 2017: [u'Savage Meadow', u'Honest Plateau', u'Arid Corner']
+INFO:root:Thu Sep 21 22:22:02 2017: [u'Savage Meadow', u'Honest Plateau', u'Arid Corner']
+INFO:root:Thu Sep 21 22:22:02 2017: [u'Savage Meadow', u'Honest Plateau', u'Arid Corner']
+INFO:root:Thu Sep 21 22:22:03 2017: idle
+INFO:root:Thu Sep 21 22:22:04 2017: idle
+INFO:root:Thu Sep 21 22:22:05 2017: idle
+INFO:root:Thu Sep 21 22:22:08 2017: idle
+INFO:root:Thu Sep 21 22:22:15 2017: idle
+INFO:root:Thu Sep 21 22:22:19 2017: idle
+INFO:root:Thu Sep 21 22:22:21 2017: idle
+INFO:root:Thu Sep 21 22:22:27 2017: idle
+INFO:root:Thu Sep 21 22:22:28 2017: idle
+INFO:root:Thu Sep 21 22:22:33 2017: idle
+INFO:root:Thu Sep 21 22:22:34 2017: idle
+INFO:root:Thu Sep 21 22:22:36 2017: idle
+INFO:root:Thu Sep 21 22:22:48 2017: idle
+INFO:root:Thu Sep 21 22:22:51 2017: idle
+INFO:root:Thu Sep 21 22:22:52 2017: idle
+INFO:root:Thu Sep 21 22:22:57 2017: idle
+INFO:root:Thu Sep 21 22:23:01 2017: idle
+INFO:root:Thu Sep 21 22:23:06 2017: idle
+INFO:root:Thu Sep 21 22:23:09 2017: idle
+INFO:root:Thu Sep 21 22:23:10 2017: idle
+INFO:root:Thu Sep 21 22:23:16 2017: idle
+INFO:root:Thu Sep 21 22:23:26 2017: idle
+INFO:root:Thu Sep 21 22:23:27 2017: idle
+INFO:root:Thu Sep 21 22:23:28 2017: idle
+INFO:root:Thu Sep 21 22:23:29 2017: idle
+INFO:root:Thu Sep 21 22:23:33 2017: idle
+INFO:root:Thu Sep 21 22:23:36 2017: idle
+INFO:root:Thu Sep 21 22:23:43 2017: idle
