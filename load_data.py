@@ -28,4 +28,7 @@ def loadJSON(fileName, stringVar):
     obj = json.loads(f.read())
     for st in obj['list']:
         st = st.strip()
+        if obj['type'] == 'names':
+            st = st.lower()
+            st = st.capitalize()
         stringVar.append(st)
