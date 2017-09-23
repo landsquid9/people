@@ -65,5 +65,5 @@ class LogicProcess(multiprocessing.Process):
 
                 for m in msg:
                     self.pipeWrite.send(m)
-                    time.sleep(5)
+                    time.sleep(1)
             #self.pipeWrite.send(str(time.time()))

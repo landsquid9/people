@@ -12,7 +12,7 @@ def txtToJSON(tp, name, fromFile, toFile):
         jsonObj["list"] = []
 
         for line in fList:
-            jsonObj["list"].append(line)
+            jsonObj["list"].append(line.strip())
 
         jsonStr = json.dumps(jsonObj)
 
