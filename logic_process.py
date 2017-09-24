@@ -59,11 +59,10 @@ class LogicProcess(multiprocessing.Process):
     def run(self):
         #self.pipeWrite.send("hello")
         while True:
-            time.sleep(1)
             for person in self.people:
                 msg = person.hourlyUpdate()
 
                 for m in msg:
                     self.pipeWrite.send(m)
-                    time.sleep(1)
+                    time.sleep(0.25)
             #self.pipeWrite.send(str(time.time()))
