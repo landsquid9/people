@@ -56,13 +56,21 @@ class LogicProcess(multiprocessing.Process):
         for p in self.people:
             p.setOthers(self.people)
 
+        self.highlightTimerStart = 0
+        self.highlightTimerMax = 4
+
     def run(self):
         #self.pipeWrite.send("hello")
         while True:
+            curM = ""
             for person in self.people:
                 msg = person.hourlyUpdate()
 
                 for m in msg:
-                    self.pipeWrite.send(m)
+                    curM = m
+                    self.pipeWrite.send("1" + m)
                     time.sleep(0.25)
-            #self.pipeWrite.send(str(time.time()))
+
+            if time.time() - self.highlightTimerStart > self.highlightTimerMax:
+                self.pipeWrite.send("2" + curM)
+                self.highlightTimerStart = time.time()

@@ -7,7 +7,6 @@ class ActionContainer:
         self.essential = essential
 
     def reqFulfilled(self, person):
-        logging.add(person.name + " " + str(person.food))
         return self.req(person)
 
     def executeAction(self, person):
