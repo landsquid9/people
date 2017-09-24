@@ -91,7 +91,7 @@ class Person:
                 p.message(p.name + " found only desolation.")
 
         def explore_req(p):
-            return True
+            return len(p.unknownLocations) > 0
 
         def converse(p):
             other = random.choice(p.others)
@@ -128,25 +128,7 @@ class Person:
         # hunger etc
         self.updateLifeSigns()
 
-        # random action
-        """
-        ranAction = randint(0, self.numActions - 1)
-        if ranAction == 0 and len(self.knownLocations) > 1:
-            # move
-            self.move(self.getOtherLocation())
-        elif ranAction == 1 and len(self.others) > 0:
-            # converse
-            ranPerson = randint(0, len(self.others) - 1)
-            self.converse(self.others[ranPerson])
-        elif ranAction == 2 and len(self.idleActions) > 0:
-            logging.add("idle")
-            self.idle()
-        elif ranAction == 3 and len(self.unknownLocations) > 1:
-            self.explore()
-        elif ranAction == 4 and self.hunger < 50:
-            self.eat()
-        """
-
+        # ACTIONS
         self.potentialActions = []
         self.weightList = []
         self.essentialActions = []
