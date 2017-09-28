@@ -4,6 +4,8 @@ import time
 
 import urwid
 
+from data_transfer import DATA_TYPES
+
 class Log:
 
     def __init__(self, pipe):
@@ -11,7 +13,8 @@ class Log:
             self.palette = [('logs', 'light red', 'light gray', '', '#f06', '#ddd'),
                             ('logs-focus', 'white', 'light red', '', '#ddd', '#f06'),
                             ('bg', 'light red', 'light gray', '', '#f06', '#ddd'),
-                            ('title', 'white', 'light red', 'bold', '#ddd', '#f06')]
+                            ('title', 'white', 'light red', 'bold', '#ddd', '#f06'),
+                            ('titleAlt', 'white', 'yellow', 'bold', '#ddd', '#ff0')]
 
             self.logList = urwid.SimpleListWalker([])
             self.logListBox = urwid.ListBox(self.logList)
@@ -55,10 +58,10 @@ class Log:
             self.background = urwid.SolidFill('{')
             self.background = urwid.AttrMap(self.background, 'bg')
 
-            headerText = """\n# Social Simulation at the End of the World #\n"""
+            headerText = """\n# OH NO IT'S THE END OF THE WORLD #\n"""
 
-            self.header = urwid.Text(headerText, align='center')
-            self.header = urwid.AttrWrap(self.header, 'title')
+            self.headerText = urwid.Text(headerText, align='center')
+            self.header = urwid.AttrWrap(self.headerText, 'title')
 
 
             self.frame = urwid.Frame(header=self.header, body=self.cols)
@@ -85,6 +88,12 @@ class Log:
     def setHighlight(self, str):
         self.highlightText.set_text(str)
 
+    def setInfo(self, strDict):
+        self.infoName.set_text(strDict["name"])
+        self.infoLocation.set_text(strDict["location"])
+        self.infoHunger.set_text(strDict["hunger"])
+        self.infoFood.set_text(strDict["food"])
+
     def run(self):
         self.main.run()
 
@@ -102,9 +111,14 @@ class Log:
             if i in('q', 'Q'):
                 return False
         txt = self.pipeListen.recv()
+
         if txt:
-            if txt[0] == '1':
-                self.addLog(txt[1:])
-            elif txt[0] == '2':
-                self.setHighlight(txt[1:])
+            if txt["type"] == DATA_TYPES["log"]:
+                self.addLog(txt["payload"])
+            elif txt["type"] == DATA_TYPES["highlight"]:
+                self.setHighlight(txt["payload"])
+            elif txt["type"] == DATA_TYPES["info"]:
+                self.setInfo(txt["payload"])
+            self.header = urwid.AttrWrap(urwid.Text("gkhc"), 'titleAlt')
+
         return True
