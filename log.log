@@ -1,12 +1,12 @@
-INFO:root:Sun Sep 24 16:30:01 2017: log started
-INFO:root:Sun Sep 24 16:30:01 2017: Opening JSON /home/daniel/python_projects/sim/data/json/first_names_male.json
-INFO:root:Sun Sep 24 16:30:01 2017: Opening JSON /home/daniel/python_projects/sim/data/json/first_names_female.json
-INFO:root:Sun Sep 24 16:30:01 2017: Opening JSON /home/daniel/python_projects/sim/data/json/family_names.json
-INFO:root:Sun Sep 24 16:30:01 2017: Opening JSON /home/daniel/python_projects/sim/data/json/place_names.json
-INFO:root:Sun Sep 24 16:30:01 2017: Opening JSON /home/daniel/python_projects/sim/data/json/idle_actions.json
-INFO:root:Sun Sep 24 16:30:01 2017: Initiating Urwid
-INFO:root:Sun Sep 24 16:30:01 2017: Intiating Logic Process
-INFO:root:Sun Sep 24 16:30:01 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
-INFO:root:Sun Sep 24 16:30:01 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
-INFO:root:Sun Sep 24 16:30:01 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
-INFO:root:Sun Sep 24 16:30:01 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
+INFO:root:Thu Sep 28 23:33:52 2017: log started
+INFO:root:Thu Sep 28 23:33:52 2017: Opening JSON /home/daniel/python_projects/sim/data/json/first_names_male.json
+INFO:root:Thu Sep 28 23:33:52 2017: Opening JSON /home/daniel/python_projects/sim/data/json/first_names_female.json
+INFO:root:Thu Sep 28 23:33:52 2017: Opening JSON /home/daniel/python_projects/sim/data/json/family_names.json
+INFO:root:Thu Sep 28 23:33:52 2017: Opening JSON /home/daniel/python_projects/sim/data/json/place_names.json
+INFO:root:Thu Sep 28 23:33:52 2017: Opening JSON /home/daniel/python_projects/sim/data/json/idle_actions.json
+INFO:root:Thu Sep 28 23:33:52 2017: Initiating Urwid
+INFO:root:Thu Sep 28 23:33:52 2017: Intiating Logic Process
+INFO:root:Thu Sep 28 23:33:52 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
+INFO:root:Thu Sep 28 23:33:52 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
+INFO:root:Thu Sep 28 23:33:52 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
+INFO:root:Thu Sep 28 23:33:52 2017: [u'Savage meadow', u'Honest plateau', u'Crumbling ruin of what might have been a pet shop', u'Crevasse', u'Field of sink holes', u'Charcoal ridge', u'Calloused and dusty plain', u'Stump village', u'Cantown']
