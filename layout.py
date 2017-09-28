@@ -13,7 +13,8 @@ class Log:
             self.palette = [('logs', 'light red', 'light gray', '', '#f06', '#ddd'),
                             ('logs-focus', 'white', 'light red', '', '#ddd', '#f06'),
                             ('bg', 'light red', 'light gray', '', '#f06', '#ddd'),
-                            ('title', 'white', 'light red', 'bold', '#ddd', '#f06')]
+                            ('title', 'white', 'light red', 'bold', '#ddd', '#f06'),
+                            ('titleAlt', 'white', 'yellow', 'bold', '#ddd', '#ff0')]
 
             self.logList = urwid.SimpleListWalker([])
             self.logListBox = urwid.ListBox(self.logList)
@@ -59,8 +60,8 @@ class Log:
 
             headerText = """\n# OH NO IT'S THE END OF THE WORLD #\n"""
 
-            self.header = urwid.Text(headerText, align='center')
-            self.header = urwid.AttrWrap(self.header, 'title')
+            self.headerText = urwid.Text(headerText, align='center')
+            self.header = urwid.AttrWrap(self.headerText, 'title')
 
 
             self.frame = urwid.Frame(header=self.header, body=self.cols)
@@ -118,6 +119,6 @@ class Log:
                 self.setHighlight(txt["payload"])
             elif txt["type"] == DATA_TYPES["info"]:
                 self.setInfo(txt["payload"])
-        self.palette = {}
-        self.main.palette = self.palette
+            self.header = urwid.AttrWrap(urwid.Text("gkhc"), 'titleAlt')
+
         return True
