@@ -3,6 +3,7 @@ import random
 import custom_logging as logging
 
 import food
+import id
 from action_container import ActionContainer
 
 
@@ -11,6 +12,8 @@ class Person:
     def __init__(self, name, gender, locations, idleActions, knowledge=[]):
         # chances out of 100
         self.EXPLORE_CHANCE = 10
+
+        self.id = newID()
 
         # life signs
         self.name = name
