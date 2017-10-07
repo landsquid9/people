@@ -13,7 +13,7 @@ class Person:
         # chances out of 100
         self.EXPLORE_CHANCE = 10
 
-        self.id = newID()
+        self.id = id.newID()
 
         # life signs
         self.name = name
